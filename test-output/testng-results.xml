@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-09-04T10:24:28 PDT" name="Default suite" finished-at="2025-09-04T10:25:31 PDT" duration-ms="63577">
+    <groups>
+    </groups>
+    <test started-at="2025-09-04T10:24:28 PDT" name="Default test" finished-at="2025-09-04T10:25:31 PDT" duration-ms="63577">
+      <class name="test.UserTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.UserTest@5b12b668]" started-at="2025-09-04T10:24:28 PDT" name="setup" finished-at="2025-09-04T10:24:36 PDT" duration-ms="8449" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="CreateAccount()[pri:1, instance:test.UserTest@5b12b668]" started-at="2025-09-04T10:24:36 PDT" name="CreateAccount" finished-at="2025-09-04T10:25:01 PDT" duration-ms="24602" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateAccount -->
+        <test-method signature="loginpage()[pri:2, instance:test.UserTest@5b12b668]" started-at="2025-09-04T10:25:01 PDT" name="loginpage" finished-at="2025-09-04T10:25:08 PDT" duration-ms="7123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginpage -->
+        <test-method signature="AddtoProduct()[pri:3, instance:test.UserTest@5b12b668]" started-at="2025-09-04T10:25:08 PDT" name="AddtoProduct" finished-at="2025-09-04T10:25:19 PDT" duration-ms="10690" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddtoProduct -->
+        <test-method signature="CheckOut()[pri:4, instance:test.UserTest@5b12b668]" started-at="2025-09-04T10:25:19 PDT" name="CheckOut" finished-at="2025-09-04T10:25:31 PDT" duration-ms="12568" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckOut -->
+      </class> <!-- test.UserTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
