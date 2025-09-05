@@ -8,8 +8,7 @@ import org.openqa.selenium.WebDriver;
 public class CreateUser {
 	
 	 WebDriver driver;
-	    Random rand = new Random(); 
-
+	 
 	    public CreateUser(WebDriver thedriver) {
 	        this.driver = thedriver;
 	    }

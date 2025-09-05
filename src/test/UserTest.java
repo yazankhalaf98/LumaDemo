@@ -28,9 +28,9 @@ public class UserTest {
 
     @BeforeTest
     public void setup() {
-        driver = DriverFactory.getDriver();   // استخدام الـ class-level driver
+        driver = DriverFactory.getDriver();  
         driver.get("https://luma.enablementadobe.com");
-        createUser = new CreateUser(driver);  // تخزين object 
+        createUser = new CreateUser(driver); 
         driver.findElement(By.xpath("(//button[@type='button'])[5]")).click();
   
     
@@ -63,11 +63,7 @@ public class UserTest {
         driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div/div/div/div/div/div/div/div[2]/a")).click();
         
         
-        // هون تقدر تستخدم الميثودز من صفحة CreateUser
-        // مثل: createUser.enterEmail("test@test.com");
-        //       createUser.enterPassword("123456");
-        //       createUser.submit();
-        
+      
         
         	
         	
@@ -95,18 +91,14 @@ public class UserTest {
     public void AddtoProduct () throws InterruptedException {
         Thread.sleep(2000);
 
-        // 1. جمع كل روابط المنتجات
         List<WebElement> products = driver.findElements(By.cssSelector(".we-ProductsGrid-item-link"));
 
         if (products.size() > 0) {
-            // 2. اختار index عشوائي
             int randomIndex = (int) (Math.random() * products.size());
 
-            // 3. اضغط على المنتج العشوائي
             products.get(randomIndex).click();
             Thread.sleep(2000);
 
-            // 4. اضغط زر Add to Cart في صفحة المنتج
             WebElement addToCartBtn = driver.findElement(By.xpath("//button[@type='submit']"));
             addToCartBtn.click();
             Thread.sleep(2000);
@@ -135,8 +127,7 @@ public class UserTest {
     	WebElement selectTag = driver.findElement(By.name("shipping.country"));
 
 		Select myselect = new Select(selectTag);
-		// myselect.selectByIndex(1);
-		// myselect.selectByValue("option2");
+		
 		myselect.selectByIndex(5);
 		
 		Thread.sleep(2000);
@@ -154,7 +145,8 @@ public class UserTest {
     	
     	
     }
-    	
+    
+   
     }
     
     
